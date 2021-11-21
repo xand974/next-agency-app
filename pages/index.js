@@ -2,8 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import Intro from "../components/Intro";
+import Services from "../components/Services";
+import Testimonial from "../components/Testimonial";
+import { data } from "../helpers/data";
 
-export default function Home() {
+export default function Home({ services }) {
+  console.log(services);
   return (
     <div>
       <Head>
@@ -12,6 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Intro />
+      <Services services={services} />
+      <Testimonial />
     </div>
   );
 }
+
+//allow us to fetch data before rendering the page
+export const getStaticProps = async () => {
+  const services = data;
+  return {
+    props: { services },
+  };
+};

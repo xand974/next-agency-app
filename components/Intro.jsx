@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "../styles/Intro.module.css";
+import Shape from "./Shape";
 
 export default function Intro() {
   return (
     <div className={styles.introContainer}>
+      <Shape top="-60px" left="-60px" backgroundColor="green" />
+      <Shape top="0%" right="-100px" backgroundColor="yellow" />
       <div className="flex-1 flex justify-between flex-col">
         <h1 className="text-6xl font-extrabold leading-normal">
           <span className="text-green-500">He3t</span> Discover something new

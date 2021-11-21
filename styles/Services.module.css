@@ -1,0 +1,26 @@
+.container {
+  width: 100vw;
+  background: white;
+  padding: 5px 100px;
+  height: 100%;
+}
+.cardServices {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+  width: calc(50vw - 140px);
+  height: calc(40vw - 60px);
+  margin: 20px;
+  cursor: pointer;
+}
+
+.cardServices:hover :last-child {
+  opacity: 0.75;
+  pointer-events: all;
+}
+
+.cardServices:hover > div {
+  transform: scale(1.1);
+}

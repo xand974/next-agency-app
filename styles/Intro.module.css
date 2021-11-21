@@ -2,6 +2,8 @@
   height: calc(100vh - 64px);
   display: flex;
   padding: 100px;
+  overflow: hidden;
+  position: relative;
 }
 
 .svgImg {
