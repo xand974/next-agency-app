@@ -7,7 +7,6 @@ import Testimonial from "../components/Testimonial";
 import { data } from "../helpers/data";
 
 export default function Home({ services }) {
-  console.log(services);
   return (
     <div>
       <Head>
