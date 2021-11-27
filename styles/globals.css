@@ -29,3 +29,12 @@ li {
 .flex-3 {
   flex: 3;
 }
+.input-size {
+  width: calc(50% - 16px);
+}
+.border-default {
+  border: 1px solid #b8b8b8;
+}
+.border-b-custom {
+  border-bottom: 4px solid black;
+}

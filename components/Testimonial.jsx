@@ -46,7 +46,7 @@ export default function Testimonial() {
               alt=""
               width="50"
               height="50"
-              className="rounded-full"
+              className="rounded-full object-cover"
             />
             <p className="ml-5 font-light">Sonia</p>
           </div>
@@ -98,7 +98,7 @@ export default function Testimonial() {
               alt=""
               width="50"
               height="50"
-              className="rounded-full"
+              className="rounded-full object-cover"
             />
             <p className="ml-5 font-light">Sonia</p>
           </div>
@@ -110,7 +110,7 @@ export default function Testimonial() {
               alt=""
               width="50"
               height="50"
-              className="object-contain"
+              className="object-cover"
             />
           </div>
           <div className="mb-5">
