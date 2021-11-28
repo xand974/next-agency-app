@@ -8,7 +8,7 @@ export default function Intro() {
       <Shape top="-60px" left="-60px" backgroundColor="green" />
       <Shape top="0%" right="-100px" zIndex={40} backgroundColor="#c2f4f6" />
       <div className="flex-1 flex justify-between flex-col max-lg:my-5 max-lg:justify-around">
-        <h1 className="text-6xl font-extrabold leading-normal max-lg:text-center max-lg:text-5xl max-lg:mt-16">
+        <h1 className="text-6xl font-extrabold leading-normal max-lg:text-center max-lg:text-5xl max-sm:mt-16">
           <span className="text-green-500">He3t</span> Discover something new
         </h1>
         <p className="italic text-2xl font-extralight w-10/12 leading-snug max-lg:text-center max-lg:my-6 max-lg:w-full max-lg:text-lg">

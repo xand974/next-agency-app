@@ -24,7 +24,7 @@ export default function Product({ product }) {
         ))}
       </div>
       <div className="flex-1 flex flex-col items-start max-lg:items-center">
-        <h1 className=" text-5xl mb-11 font-bold max-lg:mb-10">
+        <h1 className=" text-5xl mb-11 font-bold max-lg:my-10">
           {product.title}
         </h1>
         <p className="text-xl font-extralight mb-11 text-gray-700 max-lg:text-center max-lg:w-10/12">

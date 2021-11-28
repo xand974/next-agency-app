@@ -14,6 +14,10 @@
   .introContainer {
     flex-direction: column;
     padding: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .introContainer {
     padding-top: 72px;
   }
 }

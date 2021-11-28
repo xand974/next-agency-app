@@ -74,9 +74,10 @@ export default function Navbar() {
           </button>
         </div>
         <ul
+          onClick={() => setOpenHam(false)}
           style={{
             height: "calc(100vh - 72px)",
-            transform: `translateX(${openHam ? "0vw" : "50vw"})`,
+            right: `${openHam ? "0" : "-100vw"}`,
           }}
           className="fixed w-60 bg-black flex flex-col justify-around bottom-0 z-50 right-0 py-3 transition-all min-sm:hidden"
         >
