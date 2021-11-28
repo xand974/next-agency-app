@@ -2,18 +2,24 @@ import React from "react";
 import Shape from "./Shape";
 import Image from "next/image";
 import YoutubeImg from "../public/Images/Youtube.png";
+
+const Border = () => {
+  return (
+    <hr className="min-lg:hidden border-1 w-2/12 border-dashed border-gray-300 my-10" />
+  );
+};
 export default function Testimonial() {
   return (
-    <div className="h-screen w-screen flex flex-col overflow-hidden mb-40">
-      <div className="flex-1 relative">
-        <h1 className="font-extrabold uppercase text-4xl text-center mt-20">
+    <div className="h-screen w-screen flex flex-col overflow-hidden mb-40 max-lg:h-full">
+      <div className="flex-1 relative my-6">
+        <h1 className="font-extrabold uppercase text-4xl text-center mt-20 max-lg:m-0 max-lg:text-center">
           testimonials
         </h1>
         <Shape top="-50%" left="37%" backgroundColor="purple" />
       </div>
-      <div className="flex-1 flex items-center mx-5">
+      <div className="flex-1 flex items-center mx-5 max-lg:flex-col">
         <div className="flex-1 w-full h-full mx-5 flex flex-col p-2">
-          <div className="mb-5">
+          <div className="mb-5 max-lg:flex max-lg:justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
@@ -27,12 +33,12 @@ export default function Testimonial() {
               />
             </svg>
           </div>
-          <div className="mb-5">
+          <div className="mb-5 max-lg:flex max-lg:justify-center">
             <h3 className="text-2xl text-gray-500">Facebook</h3>
           </div>
-          <div className="mb-5">
-            <p>
-              <q className="italic text-gray-700 font-light">
+          <div className="mb-5 ">
+            <p className="max-lg:w-full max-lg:text-center">
+              <q className="italic text-gray-700 font-light max-lg:text-center max-lg:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
                 veniam inventore ut. Pariatur, sit aspernatur. Libero dolorem
                 ipsum laborum sint delectus repellendus alias voluptatem
@@ -40,7 +46,7 @@ export default function Testimonial() {
               </q>
             </p>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center max-lg:justify-center">
             <Image
               src="https://images.unsplash.com/photo-1637386695817-0b76cacd4a69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               alt=""
@@ -51,8 +57,9 @@ export default function Testimonial() {
             <p className="ml-5 font-light">Sonia</p>
           </div>
         </div>
+        <Border />
         <div className="flex-1 w-full h-full mx-5 flex flex-col p-2">
-          <div className="mb-5">
+          <div className="mb-5 max-lg:flex max-lg:justify-center">
             <svg
               viewBox="0 0 24 24"
               width="50"
@@ -79,12 +86,12 @@ export default function Testimonial() {
               </g>
             </svg>
           </div>
-          <div className="mb-5">
+          <div className="mb-5 max-lg:flex max-lg:justify-center">
             <h3 className="text-2xl text-gray-500">Google</h3>
           </div>
           <div className="mb-5">
             <p>
-              <q className="italic text-gray-700 font-light">
+              <q className="italic text-gray-700 font-light max-lg:w-full max-lg:text-center max-lg:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
                 veniam inventore ut. Pariatur, sit aspernatur. Libero dolorem
                 ipsum laborum sint delectus repellendus alias voluptatem
@@ -92,7 +99,7 @@ export default function Testimonial() {
               </q>
             </p>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center max-lg:justify-center">
             <Image
               src="https://images.unsplash.com/photo-1637386695240-958bc3871a54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
               alt=""
@@ -103,8 +110,9 @@ export default function Testimonial() {
             <p className="ml-5 font-light">Sonia</p>
           </div>
         </div>
+        <Border />
         <div className="flex-1 w-full h-full mx-5 flex flex-col p-2">
-          <div className="mb-5">
+          <div className="mb-5 max-lg:flex max-lg:justify-start">
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1920px-YouTube_full-color_icon_%282017%29.svg.png"
               alt=""
@@ -113,12 +121,12 @@ export default function Testimonial() {
               className="object-cover"
             />
           </div>
-          <div className="mb-5">
+          <div className="mb-5 max-lg:flex max-lg:justify-center">
             <h3 className="text-2xl text-gray-500">YouTube</h3>
           </div>
           <div className="mb-5">
             <p>
-              <q className="italic text-gray-700 font-light">
+              <q className="italic text-gray-700 font-light max-lg:w-full max-lg:text-center max-lg:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
                 veniam inventore ut. Pariatur, sit aspernatur. Libero dolorem
                 ipsum laborum sint delectus repellendus alias voluptatem
@@ -126,7 +134,7 @@ export default function Testimonial() {
               </q>
             </p>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center max-lg:justify-center">
             <Image
               src="https://images.unsplash.com/photo-1637386694450-70e88f7ddbbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
               alt=""

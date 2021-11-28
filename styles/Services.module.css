@@ -24,3 +24,16 @@
 .cardServices:hover > div {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cardServices {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
